@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+}
+body{
+    background-color: beige;
+}
+.head{
+    background-color: rgb(225, 181, 238);
+    height: 12vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+.grp-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 80px;
+}
+.element{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.element:hover{
+    opacity: 0.9;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: black;
+}
+.result{
+    text-align: center;
+    margin-top: 40px;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 30px;
+}
+p{
+    font-size: 20px;
+    padding: 10px;
+}
+.value1{
+    color: green;
+    font-size: 80px;
+}
+.value2{
+    color: blue;
+    font-size: 80px;
+}
+.message p{
+    background-color: rgb(142, 162, 253);
+    text-align: center;
+    padding: 10px 200px;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
