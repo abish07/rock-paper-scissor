@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header>
       <div class="head">
-        <h1>ROCK PAPER SCISSOR</h1>
+          <h1 id="mode-heading"></h2>
       </div>
     </header>
     <main>
@@ -28,17 +30,18 @@
           <h2>SCORE</h2>
           <div class="score-board">
             <div class="score">
-              <p>Player :</p>
-              <p class="value1">0</p>
+              <p>Player : <span id="uservalue"></span></p>
+              <p><span id="value1">0</span></p>
             </div>
             <div class="score">
-              <p>Computer:</p>
-              <p class="value2">0</p>
+              <p>Computer: <span id="comvalue"></span></p>
+              <p><span id="value2">0</span></p>
             </div>
           </div>
           <div class="message">
-            <p>Result</p>
+            <p id="result">Result</p>
           </div>
+          <button class="reset">reset</button>
         </div>
     </main>
     <script src="script.js"></script>
