@@ -24,9 +24,8 @@ choices.forEach((element) => {
     if(gameOver) return;
     const userchoice = element.id;
     const compchoice = getcomputerchoice()
-    console.log(`User choice: ${userchoice} and computer choice: ${compchoice}`);
-    console.log(handleClick(userchoice , compchoice));
-    console.log(bestOfmode());
+    handleClick(userchoice , compchoice);
+    bestOfmode();
   });
 });
 function getcomputerchoice(){
@@ -43,8 +42,7 @@ function handleClick(userchoice,compchoice){
   }
   else if((userchoice=="scissor" && compchoice=="paper") ||
   (userchoice=="paper" && compchoice=="rock") ||
-  (userchoice=="rock" && compchoice=="scissor")
-){
+  (userchoice=="rock" && compchoice=="scissor")){
   userScore++;
   console.log("Userscore = "+ userScore);
   usersdata.textContent = userScore;
